@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+  transition: 300ms all ease-in-out;
+}
+body,
+main {
+  display: flex;
+}
+body {
+  flex-direction: column;
+  background-color: #f8f8f9;
+}
+main {
+  flex-direction: row;
+  flex: auto;
+}
+main > article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+main > aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.myProfileLink {
+  display: flex;
+  background-color: aliceblue;
+  padding: 1em;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+.myProfileLink:hover {
+  opacity: 1;
+  transform: translate(0, -10px);
+}
+
+.myProfileLink :nth-child(1) {
+  margin-right: 1em;
+}
+
+.myProfileLink :nth-child(3) {
+  margin: auto 0 auto auto;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #6c757d;
+}
+.blockquote-footer::before {
+  content: "\2014 \00A0";
+}
+
+blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.logo {
+  opacity: 0.7;
+}
+
+.logo:hover {
+  opacity: 1;
+  letter-spacing: 1px;
+  margin-left: -5px;
+}
+
+small {
+  font-size: small;
+}
+
+/*PROFILE PAGE STYLES*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700&display=swap");
+
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.2rem;
+  margin: 0 1em 1em 0;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  background-color: #007bff;
+  opacity: 0.7;
+  transition: width 0.6s ease;
+}
+.progress-bar:hover {
+  opacity: 1;
+}
+
+/* COLOR CODES  */
+.html {
+  background-color: #f06529;
+}
+.css {
+  background-color: #2965f1;
+}
+.javascript {
+  background-color: #f0db4f;
+}
+.node {
+  background-color: #3c873a;
+}
+.vue {
+  background-color: #41b883;
+}
+.sql {
+  background-color: #00758f;
+}
+.profile-card {
+  width: 33rem;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #002d40;
+}
+
+@media (max-width: 1066px) {
+  .profile-card {
+    width: 26rem;
+  }
+}
+
+/* .profile-card .cover {
+  background-image: url("https://source.unsplash.com/WLUHO9A_xik/1600x900"), linear-gradient(135deg, rgba(26, 166, 183, 0.2), rgba(255, 65, 77, 0.4));
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 14rem;
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: -14rem;
+  transform: translateY(0);
+  transition: transform 500ms ease-in-out, opacity 200ms 300ms;
+  opacity: 0;
+  box-shadow: 0 2rem 4rem -3rem rgba(0, 45, 64, 0.5), 0 0rem 8rem 0 rgba(0, 45, 64, 0.1);
+} */
+.profile-card .pic {
+  background-image: url("./images/avatorImage.png"),
+    linear-gradient(135deg, rgba(26, 166, 183, 0.1), rgba(255, 65, 77, 0.2));
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  position: absolute;
+  left: 50%;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -2rem;
+  z-index: 2;
+  box-shadow: 1px 0rem 0.7rem 0rem rgb(0 45 64 / 20%),
+    0 0 0.5rem 0 rgb(0 45 64 / 20%), 0 0rem 4rem 0 rgb(0 0 0 / 20%);
+}
+.profile-card .profile {
+  position: relative;
+  background: aliceblue;
+  width: 100%;
+  border-radius: 2rem;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  transition: transform 300ms ease-in-out;
+  box-shadow: 0 2rem 4rem -3rem rgba(0, 45, 64, 0.5),
+    0 0rem 8rem 0 rgba(0, 45, 64, 0.1);
+}
+
+.profile-card .above-fold {
+  padding-top: 3rem;
+}
+
+.profile-card .above-fold .role {
+  font-size: 1.1rem;
+  color: #107985;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.profile-card .above-fold .location {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.profile-card .below-fold {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 500ms ease-in-out, opacity 500ms 250ms;
+}
+
+.profile-card .below-fold .about {
+  margin: -1rem 0 2rem;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.profile-card .below-fold .about p {
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.profile-card.expand .cover {
+  opacity: 1;
+  transform: translateY(-5rem);
+  transition: transform 500ms ease-in-out, opacity 200ms 0ms;
+}
+
+.profile-card.expand .profile {
+  transform: translateY(5rem);
+}
+
+.profile-card.expand .below-fold {
+  height: 100%;
+  opacity: 1;
+}
+
+.profile-card.expand #expand-button {
+  animation: none;
+  transform: rotate(180deg);
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+}
+.links > li > a {
+  color: inherit;
+}
+.links > li:hover {
+  transform: scale(1.4);
+}
+.links > li:nth-child(1) {
+  color: #2867b2;
+}
+.links > li:nth-child(2) {
+  color: #211f1f;
+}
+.links > li:nth-child(3) {
+  color: #c13584;
+}
+#expand-button {
+  opacity: 0.3;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  animation: bounce 4s infinite;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 200ms, color 200ms, transform 500ms;
+}
+
+#expand-button:hover {
+  background: #002d40;
+  color: white;
+}
+
+@keyframes bounce {
+  0%,
+  60%,
+  100% {
+    transform: translatey(0);
+  }
+  80% {
+    transform: translatey(-8px);
+  }
+  90% {
+    transform: translatey(8px);
+  }
+}

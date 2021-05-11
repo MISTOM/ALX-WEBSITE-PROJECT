@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://alx-apply.hbtn.io/level2/school.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="behavior.js"></script>
+    <title>ALX LEVEL2 - tweets</title>
+</head>
+<body class="works_on_smartphone">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="N6Urgkzz"></script>
+    <header>
+        <li class="logo"><a href="/"> Alpha Blog</a></li>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/tweets.html">Tweets</a></li>
+            <li><a href="/profile.html">About</a></li>
+        </ul>
+
+        <div class="right">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="fb-share-button" data-href="http://127.0.0.1:5500/" data-layout="box_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A5500%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+          </div>
+    </header>
+
+    <main>
+        <article>
+            <p>
+                Since I was not 100% sure that the ALX program was legit, I ventured into social media looking for proof and confessions. I found a video of <a href="https://luminosfund.org/leadership-series/fred-swaniker/" >Fred Swaniker</a> on Youtube (Ted Talk). He was talking about his mission of changing Africa by bringing up young leaders. This really kept me going on, Bulldozeing through the application.
+                <small style="text-indent: 1em;">-Never doubt that a group, a small group of thoughtfull leaders,can
+                    change Africa; Indeed it's the only thing that ever will.</small> 
+            </p>
+            <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">If you want to go fast, go alone. If you want to go far, go together.<a href="https://twitter.com/hashtag/Africa?src=hash&amp;ref_src=twsrc%5Etfw">#Africa</a> <a href="https://twitter.com/hashtag/ALX?src=hash&amp;ref_src=twsrc%5Etfw">#ALX</a> <a href="https://twitter.com/hashtag/YoungLeader?src=hash&amp;ref_src=twsrc%5Etfw">#YoungLeader</a> <a href="https://twitter.com/hashtag/AfricaToTheWorld?src=hash&amp;ref_src=twsrc%5Etfw">#AfricaToTheWorld</a> <a href="https://t.co/DeoAIiaehi">pic.twitter.com/DeoAIiaehi</a></p>&mdash; ALX (@alx_africa) <a href="https://twitter.com/alx_africa/status/1386236071210590212?ref_src=twsrc%5Etfw">April 25, 2021</a></blockquote>
+
+        </article>
+
+        <aside>
+            <p><small>We're living in a tough perioid throughout the history of mankind. The global Pandemic, Covid-19; Which brought us new ways of living ans lifestyle. <br> Tell us how you are coping! below</small></p>
+            <div id="disqus_thread"></div>
+        </aside>
+    </main>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+
+        let PAGE_URL, PAGE_IDENTIFIER = window.location.href;
+    
+        var disqus_config = async function () {
+        this.page.url = await PAGE_URL;  // page's canonical URL variable
+        this.page.identifier = await PAGE_IDENTIFIER; //  page's unique identifier variable
+        };
+    
+        (async function() { // DON'T EDIT BELOW THIS LINE
+        var d = await document, s = d.createElement('script');
+        s.src = 'https://tomalxblog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer>
+        <p><small>Made by THOMAS KIGARDE for <a href="https://alx-apply.hbtn.io" target="_blank">ALX</a>.</small></p>
+    </footer>
+</body>
+</html>
